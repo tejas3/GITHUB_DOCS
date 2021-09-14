@@ -1,4 +1,91 @@
 # GitHub Commands
+➔ Install Git if not already installed:  
+      
+      Linux: sudo apt install git
+      
+      Win:  https://git-scm.com/download/win
+
+
+➔ Configuring global user and email  
+     
+     git config --global user.email <”you@example.com”>
+     
+     git config --global user.name <”Your Name">
+     
+
+➔ Git initialization
+    
+    git init <repo_name>
+     
+    cd <repo_name>
+
+➔ To check git status
+      
+    git status
+
+➔ Add to staging area:
+    
+    git add <file_name>
+
+➔ Commit to local repo:
+     
+    git commit -m "<message of your choice>"
+ 
+ ➔ Create the connection with remote repo
+     
+    git remote add origin <https_link_of_repo>
+ 
+➔ Push the local repository to remote repo
+    
+    git push origin master
+ 
+➔ Creating a copy of remote repo in your local
+    
+    git clone <https link>
+ 
+➔ Get the remote repo changes in your local
+
+    git pull origin master
+ 
+➔ Check the logs
+    
+    git log --oneliner
+ 
+➔ Checkout any earlier version of a file from git repo based on commit_id
+    
+    git checkout <commit_id> <file_name>
+ 
+➔ Remove the connection from remote repo
+    
+    git remote remove origin <https_link_of_repo>
+
+➔ Check diff between working area and staging
+    
+    git diff <file_name>
+ 
+➔ Check diff between staging and local repo
+    
+    git diff --staged <file_name>
+ 
+➔ Un stage a staged file
+    
+    git reset HEAD <file_name>
+
+➔ Remove a file from repo/staged and working directory
+    
+    git rm -f <file_name>
+    
+    git commit -m "<deleted file>"
+ 
+➔ Remove a file from repo/staged but not from working directory
+    
+    git rm --cached <file_name>
+    
+    git commit -m "<deleted file>"
+ 
+➔ You can user .gitignore to ignore files by adding entries in file
+    
+    .gitignore
 
 
 # How to raise GitHub pull request through command line ?
@@ -15,6 +102,7 @@ Command: git clone  https://github.com/tejas3/GITHUB_DOCS.git
 Go to GITHUB_DOCS folder which you recently cloned
 
 ``` Command: cd GITHUB_DOCS ```
+
 ##################################################################################################
  
  
@@ -25,7 +113,6 @@ Select appropriate branch where you want to push your changes
 ```Command:-  git branch```
            ```git checkout master```
                      
-
 
 ##################################################################################################
  
@@ -120,7 +207,6 @@ Now we have to add upstream which you have copied
  
 ```Command 3: git remote -v```
 
-
 ##################################################################################################
  
  
@@ -174,8 +260,8 @@ Step 12: After this step your changes will reflect in your pull request and it a
 ## **Step 16:** 
 Once your pull request is approved by your reviewers then you have to click on merge pull request button.
  
-##################################################################################################
-##################################################################################################
+##################################################################################################   
+##################################################################################################  
  
  You are done! :-)
  
