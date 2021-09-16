@@ -291,3 +291,7 @@ For eg: git cherry-pick 885c61e65275208b57229aac0dfdf34df98f1
 ## How to update on specific commit/apps version?
 
 ```Command: git checkout hashOfYourCommit```
+
+
+## Add files in git
+   git add <filename>
