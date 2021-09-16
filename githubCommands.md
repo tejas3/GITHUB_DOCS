@@ -292,11 +292,4 @@ For eg: git cherry-pick 885c61e65275208b57229aac0dfdf34df98f1
 
 ```Command: git checkout hashOfYourCommit```
 
-
-## Add files in git
-   git add <filename>
-   
-## Remove file
-
-
-# End
+# END
